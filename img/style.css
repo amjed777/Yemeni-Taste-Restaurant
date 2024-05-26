@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+      font-family: "Amine_mod", sans-serif;
+    }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+    /* utility classes */
+    .primary-text{
+        color: #f19220;
+    }
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 15px;
+    }
+    .btn-primary{
+        color: #fff;
+        border: 1px solid #fff;
+   
+    }
+    .btn-primary:hover,
+    .btn-secondary:hover
+    {
+        background: #f19220;
+    }
+
+    .btn-secondary{
+        color: #fff;
+        background: #383848;
+        margin-top: 2rem;
+    }
+
+    /* header start */
+    header {
+        height: 100vh;
+        background: url("./home_bg.jpeg") center center/cover no-repeat;
+        position: relative;
+    }
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+#navbar img {
+        width: 120px;
+        margin-left: 80px;
+        margin-top: 50px;
+    }
+
+    #navbar ul {
+        display: flex;
+        margin-right: 40px;
+    }
+    #navbar ul li a {
+        padding: 20px 20px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    #navbar ul li a:hover{
+        border-bottom: 2px solid #e4e95b;
+    }
+    header .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+        font-size: 25px;
+    }
+    header .content h1{
+        font-size: 80px;
+        color: #fff;
+    }
+    header .content p{
+        color: #fff;
+        margin: 15px 20px ;}
+
+        header::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgb(0,0,0,0.6);
+        }
+        header *{
+            z-index: 10;
+        }
+    /* header end */
+    /* about start */
+        #معلومات {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f4f4f4;
+        }
+        #معلومات .title,
+        #عروض .title,
+        #قائمةالطعام .title{
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        #معلومات h2 ,
+        #عروض h2,
+        #قائمةالطعام h2 ,
+        #المعرض h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        #معلومات h2,
+        #قائمةالطعام h2{
+            color: #383848;
+        }
+        #معلومات .title p,
+        #قائمةالطعام .title p{
+            font-size: 25px;
+            color: #9a9a9a;
+            font-weight: bold;
+        }
+        #معلومات .معلومات-content{
+            display: flex;
+            justify-content: space-between;
+         }
+        #معلومات .معلومات-content img{
+            width: 450px;
+        }
+        #معلومات .معلومات-content P{
+            color: #9a9a9a;
+            margin-right: 7rem;
+            font-weight: bold;
+            list-style: 1.6;
+        }
+    /* about end */
+
+    /* offer start */
+        #عروض {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            background: url(./offer-background.jpg) center center/cover fixed;
+        }
+        #عروض h2 {
+            color:  #f19220;
+        }
+        #عروض .title p {
+            color: #fff;
+            font-weight: bold;
+            font-size: 25px;
+        }
+        #عروض .عروض-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        #عروض .عروض-items img {
+            width: 200px;
+        }
+        #عروض .عروض-items h3{
+            font-size: 25px;
+            margin: 15px 0;
+        }
+        #عروض .عروض-items p {
+            font-size: 14px;
+            padding: 0 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        #عروض .عروض-items span {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        /* offer end */
+
+        /* menu start */
+
+        #قائمةالطعام{
+            background: #f4f4f4;
+            padding: 5rem 0;
+        }
+
+        #قائمةالطعام .قائمةالطعام-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #قائمةالطعام .قائمةالطعام-items .قائمةالطعام-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+        }
+
+        #قائمةالطعام .قائمةالطعام-items .قائمةالطعام-item img{
+            width: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        #قائمةالطعام .قائمةالطعام-items .قائمةالطعام-item h3{
+            color: #383848;
+            border-bottom: 1px dashed #c2bdbd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        #قائمةالطعام .قائمةالطعام-items .قائمةالطعام-item span{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #قائمةالطعام .btn{
+            display: block;
+            margin: 20px auto 0;
+            background: #f19220;
+            color: #fff;
+            font-family: "Amine_mod", sans-serif;
+            cursor: pointer;
+        }
+        #قائمةالطعام .btn:hover{
+            background: #383848;
+
+        }
+        /* menu end */
+
+        /* daytime start */
+        #يبداءاليوم {
+            background: url(daytime_bg.jpeg),center center/cover fixed no-repeat;
+            color: #fff;
+            text-align: center;
+        }
+        
+        #يبداءاليوم .يبداءاليوم-items {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40vh;
+        }
+        #يبداءاليوم .يبداءاليوم-items h3 {
+            font-size: 32px;
+            margin: 20px 0;
+        }
+        #يبداءاليوم .يبداءاليوم-items p {
+            font-weight: bold;
+        }
+        /* daytime end */
+
+        /* gallery start */
+        #المعرض{
+            background: url(offer-background.jpg)center center/cover no-repeat;
+            padding: 8rem 0 6rem;
+        }
+        #المعرض h2 {
+            color: #f19220;
+            text-align: center;
+        }
+        #المعرض .صورالمعرض{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #المعرض .صورالمعرض img {
+            width: 280px;
+            height: 200px;
+            border-radius: 15px;
+            margin: 20px;
+            opacity: 0.8;
+        }
+        
+        #المعرض .صورالمعرض img:hover {
+            opacity: 1;
+
+
+        }
+
+        /* gallery end */
+
+        /* contact start */
+        #للتواصل {
+            padding: 5rem 0;
+            background: #f4f4f4;
+        }
+
+        #للتواصل .container {
+            max-width: 900px;
+        }
+
+        #للتواصل .للتواصلاتصل{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال{
+            width: 50%;
+        }
+
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال div {
+            margin: 30px 0;
+            line-height: 1.7;
+        }
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال h3 {
+            font-size: 28px;
+            color: #383848;
+            margin-bottom: 10px;
+        }
+
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال p {
+            color: #9a9a9a;
+        }
+
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال i{
+            color: #f19220;
+            margin-right: 5px;
+            
+        }
+
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال a i{
+            color: #fff;
+            background-color: #f19220;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+        #للتواصل .للتواصلاتصل .معلوماتالاتصال a i:hover{
+             background: #fff;
+             color: #383848;
+        }
+
+        form {
+            width: 50%;
+        }
+
+        form input,
+        textarea{
+            direction: rtl;
+            width: 100%;
+            display: block;
+            padding: 20px 15px;
+            margin: 20px 0;
+            border: none;
+            background-color: #fff;
+            font-family: "Amine_mod", sans-serif;
+            border: 3px solid #f19220;
+            border-radius: 10px;
+
+        }
+        #للتواصل .btn{
+            background: #f19220;
+            color: #fff;
+            font-family: "Amine_mod", sans-serif;
+            cursor: pointer;
+
+        }
+
+        #للتواصل .btn:hover{
+            background-color: #383848;
+            font-family: "Amine_mod", sans-serif;
+
+        }
+
+        /* contact start */
+
+        /* footer start */
+
+        #footer {
+            background: #383848;
+            text-align: center;
+            color: #fff;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+
+        /* footer end */
+
+
+
+
